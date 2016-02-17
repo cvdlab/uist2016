@@ -68,7 +68,7 @@ breaklinks=true,
 % End of preamble. Here it comes the document.
 \begin{document}
 
-\title{Something related to web, graphics and indoor pseudo-realistic scene navigation}
+\title{Quasi-Photorealistic Indoor Scene Creation, Editing and Navigation as a Service}
 
 \numberofauthors{4}
 \author{
@@ -116,55 +116,96 @@ and descriptors. \newline
 but strongly encouraged. On the submission page only the classifiers’
 letter-number combination will need to be entered.}
 
-\section{Introduction}
+\section{Introduction}  % (fold)
+\label{sec:introduction}
+The paper title should be shortened: valid alternatives are
 
-This format is to be used for submissions that are
-published in the conference proceedings.  We wish to give
-this volume a consistent, high-quality appearance. We
-therefore ask that authors follow some simple
-guidelines. In essence, you should format your paper
-exactly like this document. The easiest way to do this is
-simply to download a template from the conference web
-site, and replace the content with your own material.
+\begin{itemize}
+   \item \emph{``Quasi-Photorealistic Indoor Scene Managemenet as a Service''}
+   \item \emph{``Quasi-Photorealistic Indoor Scene Lifecycle Management as a Service''}
+   \item \emph{``Quasi-Photorealistic Indoor Scene Manupulation as a Service''}
+   \item \emph{``Quasi-Photorealistic Indoor Scene Manupulation and Navigation as a Service''}
+ \end{itemize} 
+% section introduction (end)
 
-\section{Page Size and Columns}
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\section{Architecture} % (fold)
+\label{sec:architecture}
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+In this section will be introduced the three constitutive components of the systems:
 
-\section{Blind Review}
+\begin{enumerate}
+  \item the {\tt Editor}
+  \item the {\tt Backing service}
+  \item the {\tt Navigator}
+\end{enumerate}
 
-For archival submissions, CHI requires a ``blind review.'' To prepare
-your submission for blind review, remove author and institutional
-identities in the title and header areas of the paper. You may also
-need to remove part or all of the Acknowledgments text.  Further
-suppression of identity in the body of the paper and references is
-left to the authors' discretion. For more details, see the submission
-guidelines and checklist for your submission category.
+% section architecture (end)
 
-\section{Conclusion}
 
-It is important that you write for the SIGCHI audience.  Please read
-previous years' Proceedings to understand the writing style and
-conventions that successful authors have used.  It is particularly
-important that you state clearly what you have done, not merely what
-you plan to do, and explain how your work is different from previously
-published work, i.e., what is the unique contribution that your work
-makes to the field?  Please consider what the reader will learn from
-your submission, and how they will find your work useful.  If you
-write with these questions in mind, your work is more likely to be
-successful, both in being accepted into the Conference, and in
-influencing the work of our field.
+\section{User Interaction} % (fold)
+\label{sec:user_interaction}
 
-\section{Acknowledgments}
+In this section will be listed the implemented user interactions.
 
-We thank CHI, PDC and CSCW volunteers, and all publications support
-and staff, who wrote and provided helpful comments on previous
-versions of this document.  Some of the references cited in this paper
-are included for illustrative purposes only.  \textbf{Don't forget
-to acknowledge funding sources as well}, so you don't wind up
-having to correct it later.
+% section user_interaction (end)
+
+
+\section{Rendering Model} % (fold)
+\label{sec:rendering_model}
+
+\subsection{Enabling Conditions} % (fold)
+\label{sub:enabling_conditions}
+
+This section should report about enabling conditions for lightweight render loop, i.e. indoor still scene, for which shadows can be precomputed.
+
+% subsection enabling_conditions (end)
+
+\subsection{Lightweight Render Loop} % (fold)
+\label{sub:lightweight_render_loop}
+
+It is the case to merely list the numerous precautions and devices enabling such a simplified render loop.
+
+% subsection lightweight_render_loop (end)
+
+% section rendering_model (end)
+
+
+\section{Experimental results} % (fold)
+\label{sec:experimental_results}
+
+Experimental data are the salt of the research. It is probably the case to add some data about user interaction, being the paper mainly focused on that aspect.
+
+% section experimental_results (end)
+
+
+\section{Discussion}  % (fold)
+\label{sec:discussion}
+
+This section is devoted to the comparison with other systems 
+
+\begin{enumerate}
+  \item \em{https://www.shapespark.com}
+  \item \em{http://cgcloud.pro}
+\end{enumerate}
+
+% section discussion (end)
+
+
+\section{Conclusion}  % (fold)
+\label{sec:conclusion}
+
+Recap of the whole work
+
+% section conclusion (end)
+
+
+\section{Acknowledgments}  % (fold)
+\label{sec:acknowledgments}
+
+I would insert a sincerely thanksgiving to the prof. Alberto Paoluzzi, for his support and precious suggestions.
+
+% section acknowledgments (end)
 
 % Balancing columns in a ref list is a bit of a pain because you
 % either use a hack like flushend or balance, or manually insert
