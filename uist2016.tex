@@ -118,6 +118,10 @@ letter-number combination will need to be entered.}
 
 \section{Observations}
 \label{sec:Observations}
+
+\subsection{Title} % (fold)
+\label{sub:title}
+
 The paper title should be shortened: valid alternatives are
 
 \begin{itemize}
@@ -127,41 +131,103 @@ The paper title should be shortened: valid alternatives are
   \item \emph{``Quasi-Photorealistic Indoor Scene Manupulation and Navigation as a Service''}
   \end{itemize}
 
+% subsection title (end)
+
+\subsection{Video} % (fold)
+\label{sub:video}
+
+For the video, we were thinking about the realization ($1/4$ of the time) and the navigation ($3/4$ of the time) of a small museum (4 to 6 rooms), in which are exposed and a few statues and some pictures (simple to realize and impressive thanks to the good translucent effect of the frame glass, each one illuminated by a direct spotlight).
+
+% subsection video (end)
 
 
 \section{Introduction}  % (fold)
 \label{sec:introduction}
 
-Many years of study in the field of 3D graphics have bought us 
+Si deve iniziare contestualizzando le {\bf applicazioni} dei risultati anche futuri e futuribili di una tecnologia di questo tipo, il cardine della tecnologia è il seguente: si mette in condizione l'utente che abbia un minimo di competenze di grafica 3D ed un computer con accesso ad internet di 1) mettere a disposizione di altri tramite un indirizo web una scena 3D di interno navigabile con qualità quasi-fotorealistica, 2) avendo realizzato tale scena in autonomia sempre collegandosi ad un sito internet.
+
+
+{\em Introductory argumentations}: 1) user-centric 3D application; 2)self-build 3D application.
+
+
+
+{\em Enabled practical applications}: 1) Collaborative architecture for the end user; 2) virtual web-accessible self-builded visits of indoor spaces (inaccessible for any reason).
+
+
+
+{\em Enabling social factors}. Native FPS gamers feel confident moving in a virtual environment in which instead of shoot zombie or aliens, they can take a look for example of the architectural project of their renewed home.
+
+
+3D graphics techniques and algorithms are well studied and exploited right now. 
+
+The introduction of WebGL offers the possibility to bring to the people via the Web medium brand new and useful experiences.
+
+But the web is accessible form a variety of different devices. Most of them are provided with a limited hardware.
+
+
+
+The main contribution of this work is the definition and implementation of a workflow completely based on the Web infrastructure, to let the user create, refine, edit and navigate an indoor 3D scene with a quasi-photorealistic quality.
+
+
+We hypothesized a system in which any user with a very basic graphic knowhow is put in a position in which, by connecting to a website, he is autonomously able to build a scene, require remote processing and finally make use of the resulting quasi-photorealistic web navigable 3D scene.
+
+
+Abbiamo ipotizzato un sistema con il quale ogni utente con un minimo livello di conoscenze di grafica 3D, può mettere a disposizione del mondo attraverso un sito web una versione navigabile e quasi-fotorealistica di un ambiente interno da lui stesso autonomamente realizzato, sempre cnnettendosi ad un sito web, quindi senza necessità di installare (ed eventualmente ancor prima di acquistare) un prodotto software.
+
+
 
 
 % section introduction (end)
 
 
-\section{Architecture} % (fold)
-\label{sec:architecture}
-
-In this section will be introduced the three constitutive components of the systems:
-
-\begin{enumerate}
-  \item the {\tt Editor}
-  \item the {\tt Backing service}
-  \item the {\tt Navigator}
-\end{enumerate}
-
-% section architecture (end)
 
 
-\section{User Interaction} % (fold)
-\label{sec:user_interaction}
 
-In this section will be listed the implemented user interactions.
 
-% section user_interaction (end)
+
+
+\section{User Experience} % (fold) #
+\label{sec:user_experience}
+
+\subsection{Scene creation} % (fold)
+\label{sub:scene_creation}
+
+% subsection scene_creation (end)
+
+\subsection{Rapid feedback gatering} % (fold)
+\label{sub:rapid_feedback}
+
+% subsection rapid_feedback (end)
+% section user_user_experience (end)
+
+
+
+
+
+
 
 
 \section{Rendering Model} % (fold)
 \label{sec:rendering_model}
+
+
+\subsection{Quasi-photorealistic techiniques}
+\label{sub:quasi_photorealistic_techniques}
+
+They are:
+
+\begin{itemize}
+  \item Precise physical based shadow rendering (INHERIT THE MOST POSSIBLE FROM BLENDER CYCLE RENDERING)
+  \item Refraction map
+  \item Reflection map
+  \item Skybox
+  \item ...
+\end{itemize}
+
+% subsection quasi_photorealistic_techniques (end)
+
+
+
 
 \subsection{Enabling Conditions} % (fold)
 \label{sub:enabling_conditions}
@@ -180,6 +246,44 @@ It is the case to merely list the numerous precautions and devices enabling such
 % section rendering_model (end)
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Architecture} % (fold)
+\label{sec:architecture}
+
+In this section will be introduced the three constitutive components of the systems:
+
+\begin{enumerate}
+  \item the {\tt Editor}
+  \item the {\tt Backing service}
+  \item the {\tt Navigator}
+\end{enumerate}
+
+% section architecture (end)
+
+
+
+\subsection{Entity mapping} % (fold)
+\label{sub:entity_mapping}
+
+Here goes the pseudo-code of the mapping algorithm.
+
+% subsection entity_mapping (end)
+
+
+
 \section{Experimental results} % (fold)
 \label{sec:experimental_results}
 
@@ -194,6 +298,8 @@ Experimental data are the salt of the research. It is probably the case to add s
 This section is devoted to the comparison with other systems
 
 \begin{enumerate}
+  \item \em{Ikea FloorPlanner}
+  \item \em{http://www.homestyler.com/floorplan/}
   \item \em{https://www.shapespark.com}
   \item \em{http://cgcloud.pro}
   \item \em{http://www.sketchup.com/}
@@ -213,7 +319,12 @@ Recap of the whole work
 \section{Acknowledgments}  % (fold)
 \label{sec:acknowledgments}
 
-I would insert a sincerely thanksgiving to the prof. Alberto Paoluzzi, for his support and precious suggestions.
+I would insert a sincerely thanks:
+
+\begin{itemize}
+  \item professor Alberto Paoluzzi
+  \item Christian Vadalà
+\end{itemize}
 
 % section acknowledgments (end)
 
